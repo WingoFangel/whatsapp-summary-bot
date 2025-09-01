@@ -55,3 +55,24 @@ config/*.yml
 !config/config_template.yml
 config/*.json
 !config/config_template.json
+
+# --- M1 artefacts
+/_chat.txt
+/digest_ru.txt
+/examples/digest_ru.txt
+
+# Coverage / тестовые артефакты
+.coverage
+.coverage.*
+htmlcov/
+.pytest_cache/
+
+# Типизация/линтеры/анализаторы
+.mypy_cache/
+.ruff_cache/
+.pytype/
+
+# Сборки/дистрибутивы
+build/
+dist/
+wheels/
