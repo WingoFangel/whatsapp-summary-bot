@@ -1,0 +1,57 @@
+﻿# --- Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.venv/
+venv/
+.env
+.env.*
+*.egg-info/
+.ipynb_checkpoints/
+
+# --- Node/JS
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pnpm-debug.log*
+
+# --- IDE/OS
+.DS_Store
+.idea/
+.vscode/
+*.swp
+Thumbs.db
+
+# --- Logs & temp
+logs/
+*.log
+tmp/
+temp/
+
+# --- Secrets & tokens
+*.token
+*token*
+*secret*
+*secrets*
+*.pem
+*.key
+keys/
+certs/
+
+# --- Exports (чаты/медиа) - не коммитим персональные данные
+exports/
+exports/**/*
+media/
+media/**/*
+attachments/
+attachments/**/*
+
+# --- Configs (разрешаем только шаблоны)
+config/*.yaml
+!config/config_template.yaml
+config/*.yml
+!config/config_template.yml
+config/*.json
+!config/config_template.json
