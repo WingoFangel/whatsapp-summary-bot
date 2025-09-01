@@ -1,0 +1,30 @@
+# config/config_template.yaml
+# Шаблон конфигурации без ключей/персональных данных.
+# Скопируйте его в config/config.yaml и заполните локально (файл не коммитится).
+
+app:
+  name: whatsapp-summary-bot
+  env: dev               # dev | staging | prod
+  timezone: America/Argentina/Buenos_Aires
+
+whatsapp:
+  # Выберите провайдера на этапе M1+ (Meta Cloud API / 360dialog / другое)
+  provider: meta_cloud   # placeholder
+  phone_number_id: ""    # <ВАШ ID> (оставьте пустым на M0)
+  business_account_id: ""# <ВАШ ID>
+  verify_token: ""       # <ВАШ ТЕСТОВЫЙ ТОКЕН>
+  access_token: ""       # <ВАШ ACCESS TOKEN> — НЕ КОМИТИТЬ
+
+llm:
+  provider: openai       # placeholder
+  model: gpt-4o-mini     # placeholder
+  api_key: ""            # НЕ КОМИТИТЬ
+
+summary:
+  language: ru
+  schedule: daily        # daily | weekly | off
+  deliver_to: []         # список каналов/чатов получателей (будет на M1+)
+
+storage:
+  kind: local            # local | s3 | gcs — TBD на M1+
+  base_dir: "./data"     # директория для локальных заготовок/результатов
